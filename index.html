@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -6,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>mauviv art</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="">
         <link href="https://fonts.googleapis.com/css?family=Crimson+Text%7CLato%7CLora%7CMuli%7CNoto+Sans%7COpen+Sans%7CSource+Serif+Pro%7CWork+Sans" rel="stylesheet">
      </head>
 
@@ -14,23 +17,24 @@
             <div class="wrapper">
                 <header>
                     <ul>
-                        <li>home</li>
-                        <li><a href="https://twitter.com/_mauviv" target="_blank">twitter</a></li>
-                        <li><a href="https://www.instagram.com/mauvivart/" target="_blank">instagram</a></li>
-                        <li>etsy</li>
-                        <li><a href="https://www.fiverr.com/mauviv?up_rollout=true" target="_blank">fiverr</a></li>
-                        <li>prints</li>
-                        <li>email</li>
+                        <li id ="nav"><a href="#">home</a></li>
+                        <li id="nav"><a href="https://twitter.com/_mauviv" target="_blank">twitter</a></li>
+                        <li id="nav"><a href="https://www.instagram.com/mauvivart/" target="_blank">instagram</a></li>
+                        <li id="nav">etsy</li>
+                        <li id="nav"><a href="https://www.fiverr.com/mauviv?up_rollout=true" target="_blank">fiverr</a></li>
+                        <li id="nav">prints</li>
+                        <li id="nav">email</li>
                     </ul>
                 </header> 
 
                 <article id=main>
                     <img src="IMG_0109.png"/>
-                    
+                    <span class="tooltip">underwater. 12.07.21</span>
                 </article>
 
                 <article id=main2>
                     <img src="girl.png"/>
+                    <span class="tooltip">hello. 12.17.21</span>
                 </article>
 
                 <article id=main3>
@@ -40,6 +44,20 @@
                 <aside>
                     <img src="tumblr_d23d09df2193d63632b1e2160a74e4eb_f53d7a0d_540.gif">
                     <p>digital artist and illustrator</p>
+                    
+                    <li id="folder" onclick="play()">
+                        <img src="10142410781548336247.svg">
+                        <audio id="audio" src="Mouse Click.mov"></audio>
+                    </li>
+                    <li id="folder" onclick="play()">
+                        <img src="10142410781548336247.svg">
+                        <audio id="audio" src="Mouse Click.mov"></audio>
+                    </li>
+                    <li id="folder" onclick="play()">
+                        <img src="10142410781548336247.svg">
+                        <audio id="audio" src="Mouse Click.mov"></audio>
+                    </li>
+        
                 </aside>
 
                 <footer>
@@ -48,5 +66,8 @@
             </div>
         </section>
         
+        <script src="script.js"></script> 
+
      </body>
 </html>
+
