@@ -1,8 +1,10 @@
+//mouse clicking sound
 function play(){
     var audio = document.getElementById("audio");
     audio.play();
 }
 
+//displaying art button
 var btn = document.querySelector(".folder1");
 var samebtn = document.getElementById("main3");
 
@@ -25,6 +27,7 @@ closebtn.onclick = function(){
 }
 
 
+//displaying sticker designs
 var btn2 = document.querySelector(".folder2");
 var modal2 = document.querySelector(".modal2");
 var closebtn2 = document.querySelector(".close2");
@@ -38,7 +41,7 @@ closebtn2.onclick = function(){
     modal2.style.display = "none";
 }
 
-
+//displaying website designs
 var btn3 = document.querySelector(".folder3");
 var modal3 = document.querySelector(".modal3");
 var closebtn3 = document.querySelector(".close3");
