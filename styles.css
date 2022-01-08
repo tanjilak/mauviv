@@ -124,6 +124,7 @@ aside p{
 
 aside p:hover{
     color:#98b9d3;
+    transition: 0.3s;
 }
 
 #name{
@@ -242,4 +243,33 @@ article:hover .tooltip{
 
 h2{
     font-weight: normal;
+    cursor: default;
+    color: #98b9d3
+}
+
+input[type=text], select, textarea{
+    width: 90%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #cce1f2;
+    border-radius: 2px;
+    resize: none;
+}
+
+input[type=submit]{
+    background-color: transparent;
+    font-size: inherit;
+    font-family:inherit;
+    border: 3px solid #cce1f2;
+    border-radius: 2px;
+    margin-left: 42%;
+    padding: 10px 20px;
+}
+
+input[type=submit]:hover{
+    background-color: #cce1f2;
+    cursor: pointer;
+    transition: 0.3s;
 }
