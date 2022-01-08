@@ -118,7 +118,16 @@ aside{
 
 aside p{
     font-style: italic;
-    margin-block-start: 2em;
+    margin-block-start: 1em;
+    cursor: default;
+}
+
+aside p:hover{
+    color:#98b9d3;
+}
+
+#name{
+    color: #98b9d3;
 }
 
 /*hover effect on folder icons*/
@@ -181,6 +190,7 @@ p{
 article:hover .tooltip{
     visibility: visible;
     opacity: 1;
+    cursor: default;
 }
 
 /*modal pop up customization*/
@@ -206,17 +216,30 @@ article:hover .tooltip{
     width: 58%;  
     height: 80vh;
     overflow-y:auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+
 }
 
 .resize{
-    width: 600px;
+    width: 500px;
     height: auto;
+    margin: 10px;
+    padding: 5px;
+    border: 3px solid #cce1f2;
+
 }
+
 /*closing the pop up*/
 .close, .close2, .close3{
-float: right; 
-  color: lightgray; 
-  font-size: 24px;  
-  font-weight: bold;
-  cursor: pointer;
+    position:fixed;
+    width: 58%;
+    color: lightgray; 
+    font-size: 24px;  
+    font-weight: bold;
+    cursor: pointer;
+}
+
+h2{
+    font-weight: normal;
 }
