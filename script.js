@@ -4,6 +4,7 @@ function play(){
     audio.play();
 }
 
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal
 //displaying art button
 var btn = document.querySelector(".folder1");
 var samebtn = document.getElementById("main3");
@@ -41,6 +42,7 @@ closebtn2.onclick = function(){
     modal2.style.display = "none";
 }
 
+
 //displaying website designs
 var btn3 = document.querySelector(".folder3");
 var modal3 = document.querySelector(".modal3");
@@ -54,4 +56,5 @@ btn3.onclick = function(){
 closebtn3.onclick = function(){
     modal3.style.display = "none";
 }
+
 
