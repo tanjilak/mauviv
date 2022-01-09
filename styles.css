@@ -31,6 +31,7 @@ section{
     color: black;
 }
 
+/*fix mobile layout*/
 @media only screen and (max-width: 550px){
     .wrapper{
         grid-template-columns: 1fr;
@@ -44,6 +45,10 @@ section{
         
     }
     aside{
+        visibility: hidden;
+    }
+
+    .hide{
         visibility: hidden;
     }
 }
@@ -250,6 +255,8 @@ article:hover .tooltip{
     margin: 10px;
     padding: 5px;
     border: 3px solid #cce1f2;
+
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 }
 
