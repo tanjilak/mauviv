@@ -264,17 +264,18 @@ article:hover .tooltip{
 /*MOBILE LAYOUT*/
 /*hide most of site to reduce complexity*/
 @media only screen and (max-width: 550px){
-    html, body{
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
+
     /*remove grid layout*/
     section{
+        display: block;
         position: relative;
     }
 
     .wrapper{
+        display: block;
         position: relative;
+        width: 100%;
+        text-align: center;
     }
 
     article, footer, .hide{
@@ -283,9 +284,10 @@ article:hover .tooltip{
 
     /*header was optional*/
     header{
-        position: absolute;
+        position: relative;
         width: 100%;
         text-align: center;
+        padding: 2px;
     }
 
 /*only show sidebar in center*/
