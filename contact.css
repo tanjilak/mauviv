@@ -1,0 +1,56 @@
+h2, h3, h4{
+    font-weight: normal;
+    cursor: default;
+    color: #98b9d3;
+    text-align: center;
+}
+
+h3, h4{
+    color: black;
+    font-size: small;
+}
+
+h3:hover, h4:hover{
+    transition: 0.3s;
+    color: #98b9d3;
+}
+
+h4{
+    font-size: small;
+}
+/*
+backend implement later
+
+input[type=text], select, textarea{
+    width: 90%;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #cce1f2;
+    border-radius: 2px;
+    resize: none;
+}
+*/
+
+input[type=submit]{
+    margin-left: 38%;
+    margin-top: 30px;
+    background-color: transparent;
+    font-size: inherit;
+    font-family:inherit;
+    border: 3px solid #cce1f2;
+    border-radius: 2px;
+    padding: 30px 40px;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover{
+    background-color: #cce1f2;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer{
+    margin-top: 50px;
+}
