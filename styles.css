@@ -264,7 +264,10 @@ article:hover .tooltip{
 /*MOBILE LAYOUT*/
 /*hide most of site to reduce complexity*/
 @media only screen and (max-width: 550px){
-    
+    html, body{
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
     /*remove grid layout*/
     section{
         position: relative;
