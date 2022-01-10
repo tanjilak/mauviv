@@ -37,7 +37,6 @@ header{
     background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-
 }
 
 ul{
@@ -63,8 +62,10 @@ a:hover{
     transition: 0.4s;
 }
 
-article, form{
-    grid-area: main;
+/*main images
+    on right side of grid
+*/ 
+article{
     background-color:white;
     padding: 15px;
     border-radius: 10px;
@@ -108,7 +109,12 @@ aside{
     width: 230px;
     height: 300px;
     top: 126px;
-  /*  grid-area: sidebar;*/
+
+  /*  grid-area: sidebar;
+        ----- only add if want non-moveable sidebar
+        ------ remove position:fixed 
+  */
+
     background-color: white;
     padding: 15px;
     border-radius: 10px;
@@ -228,6 +234,8 @@ article:hover .tooltip{
         opcaity: 1;
     }
 }
+
+/* resize images to fit within modal*/
 .resize{
     width: 500px;
     height: auto;
@@ -252,16 +260,12 @@ article:hover .tooltip{
     color: #98b9d3;
 }
 
-#under{
-    width: 50px;
-    height: 50px;
-}
-
 
 /*MOBILE LAYOUT*/
 /*hide most of site to reduce complexity*/
 @media only screen and (max-width: 550px){
     
+    /*remove grid layout*/
     section{
         position: relative;
     }
@@ -274,14 +278,14 @@ article:hover .tooltip{
         display: none;
     }
 
+    /*header was optional*/
     header{
         position: absolute;
         width: 100%;
         text-align: center;
     }
 
-
-
+/*only show sidebar in center*/
     aside{
         position: absolute;
         margin-left: auto;
