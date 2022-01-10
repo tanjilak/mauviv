@@ -274,6 +274,7 @@ article:hover .tooltip{
     .wrapper{
         display: block;
         position: relative;
+        top: 2px;
         width: 100%;
         text-align: center;
     }
@@ -298,5 +299,17 @@ article:hover .tooltip{
         left: 0;
         right: 0;
         text-align: center;
+    }
+    .modal-content{
+        width: 60%;
+    }
+
+    .resize{
+        width: 200px;
+        margin:0;
+        padding:0;
+        border: 0;
+        margin-bottom: 10px;
+        box-shadow: none;
     }
 }
