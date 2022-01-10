@@ -31,27 +31,6 @@ section{
     color: black;
 }
 
-/*fix mobile layout*/
-@media only screen and (max-width: 550px){
-    .wrapper{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.05fr 0.7fr 1.2fr 0.2fr 0.02fr;
-        grid-template-areas:
-        "header"
-        "main"
-        "main2"
-        "main3"
-        "footer";
-        
-    }
-    aside{
-        visibility: hidden;
-    }
-
-    .hide{
-        visibility: hidden;
-    }
-}
 /*header on top*/
 header{
     grid-area: header;
@@ -276,4 +255,31 @@ article:hover .tooltip{
 #under{
     width: 50px;
     height: 50px;
+}
+
+
+/*MOBILE LAYOUT*/
+/*hide most of site to reduce complexity*/
+@media only screen and (max-width: 550px){
+    
+    section{
+        position: relative;
+    }
+
+    .wrapper{
+        position: relative;
+    }
+
+    header, article, footer{
+        display: none
+    }
+
+    aside{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 }
