@@ -211,7 +211,7 @@ article:hover .tooltip{
     margin: auto; 
     width: 58%;  
     height: 80vh;
-    overflow-y:auto;
+    overflow-y: auto;
     overflow-x: hidden;
     border: 10px solid #cce1f2;
     animation-name: slowdown;
@@ -270,9 +270,17 @@ article:hover .tooltip{
         position: relative;
     }
 
-    header, article, footer{
-        display: none
+    article, footer, .hide{
+        display: none;
     }
+
+    header{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+
 
     aside{
         position: absolute;
