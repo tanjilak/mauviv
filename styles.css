@@ -175,7 +175,16 @@ p{
     background:#98b9d3;
 }
 
+h3{
+    font-weight: normal;
+    
+}
 
+h2{
+    color: #98b9d3;
+    font-style: italic;
+    
+}
 /*tooltip on image hover*/
 .tooltip{
     visibility: hidden;
