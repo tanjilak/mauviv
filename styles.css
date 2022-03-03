@@ -1,7 +1,8 @@
 /*Icon by mithun on freeicons.io*/
 
 html,body{
-    background-image: linear-gradient(to right,#f5cdde, #f9ded7);
+    background-image: linear-gradient(to right,#f1d2c7, #f9ded7);
+    /*f5cdde*/
     font-family: 'Lato', sans-serif;
     font-size: 12px;
 }
@@ -108,7 +109,7 @@ aside{
     text-align: center;
     position: fixed;
     width: 230px;
-    height: 300px;
+    height: 250px;
     top: 126px;
 
   /*  grid-area: sidebar;
