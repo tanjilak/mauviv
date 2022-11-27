@@ -2,10 +2,10 @@
 
 /*fixing something to add again */
 html,body{
-    background: white;
+    background: black;
     /*f5cdde*/
-    font-family: 'Lato', sans-serif;
-    font-size: 12px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
 }
 
 /*nested grid*/
@@ -18,26 +18,14 @@ section{
 /*grid layout*/
 .wrapper{
     background: transparent;
-/*     display: grid;
-    grid-gap: 40px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas:
-    " . . "
-    "header header "
-    ". main"
-/*     ". main2"
-    ". main4"
-    ". main3" */
-/*     "footer footer"; */ 
-
     width: 800px;
-    color: black;
+    color: white;
 }
 
 /*header on top*/
 header{
     grid-area: header;
-    background: white;
+    background: black;
     border: 3px solid #cce1f2; 
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
   margin-top: 20px;
@@ -59,11 +47,11 @@ li{
 
 a, a:visited, a:active{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover{
-    color: #4d98da;
+    color: #cce1f2;
     transition: 0.4s;
 }
 
@@ -71,50 +59,31 @@ a:hover{
     on right side of grid
 */ 
 article{
-    background-color:white;
+    background-color:black;
     padding: 15px;
     border: 3px solid #cce1f2;
+  border-top:none;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
 }
 
-/* #main img, #main2 img, #main4 img{
-  opacity: 0.5;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-#main img:hover, #main2 img:hover, #main4 img:hover{
-  opacity: 100;
-}
-
-#main{
-    grid-area: main;
-}
-
-#main2{
-    grid-area: main2;
-}
-
-#main4{
-  grid-area: main4;
-} */
 /*https://stackoverflow.com/questions/61804697/diagonally-transition-background-color-on-hover-from-bottom-left-to-top-right*/
 
 #main3{
-/*     grid-area: main3; */
+
 
     /*hover effect*/
-    background-image: linear-gradient(45deg, #d9e4f5 50%, white 50%);
+    background-image: linear-gradient(45deg, #d9e4f5 50%, black 50%);
     background-size: 250% 100%;
     background-position: right bottom;
-    transition: background-position 1s ease;
+    transition: all 1s ease;
     cursor: pointer;
     
 }
 
 #main3:hover{
   background-position: left top;
+  color: black;
 }
 
 /*sidebar*/
@@ -174,11 +143,6 @@ aside p:hover{
     transform: scale(1.2);
 }
 
-/*footer*/
-/* footer{
-    grid-area: footer;
-    text-align: center;
-} */
 
 /*all images fit within parent*/
 img{
@@ -207,26 +171,6 @@ h2{
     font-style: italic;
     
 }
-/*tooltip on image hover*/
-.tooltip{
-    visibility: hidden;
-    background-color: white;
-    color: #98b9d3;
-
-    /*position*/
-    position: relative;
-
-    /*ease of transition*/
-    opacity: 0;
-    transition: opacity 1s;
-}
-
-article:hover .tooltip{
-    visibility: visible;
-    opacity: 1;
-    cursor: default;
-}
-
 /*modal pop up customization*/
 .modal{
     display: none;
@@ -245,7 +189,7 @@ article:hover .tooltip{
 
 .modal-content{
     position: relative; 
-    background-color: white;
+    background-color: black;
     padding: 20px; 
     margin: auto; 
     width: 58%;  
@@ -278,7 +222,7 @@ article:hover .tooltip{
     width: 500px;
     height: auto;
     margin: 10px;
-    padding: 5px;
+  
     border: 3px solid #cce1f2;
 
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
